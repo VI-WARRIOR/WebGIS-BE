@@ -4,10 +4,10 @@ const Schema = mongoose.Schema;
 
 const locationStruct = {
   longitude: {
-    type: "string",
+    type: String,
   },
   latitude: {
-    type: "string",
+    type: String,
   },
 };
 
@@ -23,6 +23,10 @@ const roomStruct = {
   size: {
     type: String,
     readonly: true,
+  },
+  imgae: {
+    type: [String],
+    require: true,
   },
   description: {
     type: String,
@@ -49,6 +53,11 @@ const roomStruct = {
   policy: {
     type: String,
     require: true,
+  },
+  isDeleted: {
+    type: Boolean,
+    require: false,
+    default: false,
   },
   createdAt: {
     type: Date,

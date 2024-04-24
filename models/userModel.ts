@@ -4,13 +4,17 @@ const Schema = mongoose.Schema;
 
 const userStruct = {
   name: {
-    type: "string",
+    type: String,
     require: true,
   },
   email: {
     type: String,
     required: true,
     unique: true,
+  },
+  token: {
+    type: String,
+    require: false,
   },
   password: {
     type: String,
