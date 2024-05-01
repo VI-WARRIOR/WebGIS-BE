@@ -12,6 +12,11 @@ const userStruct = {
     required: true,
     unique: true,
   },
+  phoneNumber: {
+    type: String,
+    required: true,
+    unique: true,
+  },
   token: {
     type: String,
     require: false,

@@ -54,6 +54,10 @@ const roomStruct = {
     type: String,
     require: true,
   },
+  phoneHostRoom: {
+    type: String,
+    require: true,
+  },
   isDeleted: {
     type: Boolean,
     require: false,
